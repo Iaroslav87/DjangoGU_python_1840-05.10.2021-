@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "markdownify.apps.MarkdownifyConfig",
+    "social_django",
     "mainapp",
+    "authapp",
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -130,3 +134,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
+CRISPY_TEMPLATE_PACK = "bootstrap4"
